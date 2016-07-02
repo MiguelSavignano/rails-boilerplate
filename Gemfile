@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby "2.3.1"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails', '5.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -22,9 +22,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 #orm mongoid see http://mongoid.github.io/en/mongoid/docs/relations.html
-gem 'mongoid', '~> 5.1.0'
+gem 'mongoid', git: 'https://github.com/mongodb/mongoid.git'
 gem 'bson_ext'
-gem "mongoid-enum"
+# gem "mongoid-enum"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -53,7 +53,6 @@ gem 'oauth2'
 
 #storage
 gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
-gem 'mongoid-grid_fs', github: 'ahoward/mongoid-grid_fs' # carrierwave-mongoid requiere
 
 #securely configure
 gem 'figaro'
