@@ -27,7 +27,9 @@ carrierwave-mongoid
 rspec, factory_girl, shoulda-matchers, database_cleaner
 
 factory girl for create objects in test suite
+
 shoulda-matchers for simple test validations methods
+
 database_cleaner for more easy test suite
 
 ###Frontend js
