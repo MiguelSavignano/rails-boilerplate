@@ -9,6 +9,7 @@
 1. bundle install && npm install
 2. start the webpack clien npm start
 3. start rails server rails s
+
 *or use foreman start -f Procfile.dev
 
 ###Orm
