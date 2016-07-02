@@ -1,0 +1,2 @@
+# remember some rails commads that we used
+rails g scaffold Todo text complete:boolean
