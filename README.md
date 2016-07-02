@@ -1,6 +1,6 @@
 # Rails boilerplate
 
-* ruby 2.3
+* ruby 2.3.1
 * node 5.5
 * rails 4.2.6
 * reactjs 15.0
