@@ -1,3 +1,0 @@
---require test/mocha_helper.js
---recursive test/
---reporter nyan
