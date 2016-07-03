@@ -29,13 +29,42 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'bootstrap-sass', '~> 3.3.5'
-#https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
+
+# frontend
+gem 'bootstrap-sass', '~> 3.3.6' #https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
 gem "font-awesome-rails"
+
+#securely configure
+gem 'figaro'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'pry-rails'
+  gem 'byebug'
+
+  gem 'faker'
+  gem 'factory_girl_rails'
+
+  #keep calm and develop great app
+  #bundle exec guard
+  gem 'guard-livereload', require: false
+  gem 'guard-rspec', require: false
+  gem 'guard-rails_best_practices', git: 'https://github.com/logankoester/guard-rails_best_practices.git'
+
+  #develoment utils
+  gem "better_errors"
+  gem 'meta_request' # download the crhome extension https://chrome.google.com/webstore/detail/railspanel/gjpfobpafnhjhbajcjgccbbdofdckggg
+  gem "rails_best_practices"
+  gem 'overcommit'   # overcommit --install && overcommit --sign
+end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'nyan-cat-formatter' # I like this ^_^
+  gem "spring-commands-rspec"
+  # gem 'database_cleaner'
+  gem 'shoulda-matchers', '~> 3.1'
 end
 
 group :development do
