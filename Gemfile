@@ -45,6 +45,12 @@ group :development, :test do
 
   gem 'faker'
   gem 'factory_girl_rails'
+  gem 'rails-controller-testing'
+  gem 'rspec-rails'
+  gem "spring-commands-rspec"
+  gem 'nyan-cat-formatter' # I like this ^_^
+  # gem 'database_cleaner'
+  gem 'shoulda-matchers', '~> 3.1'
 
   #keep calm and develop great app
   #bundle exec guard
@@ -60,11 +66,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'rspec-rails'
-  gem 'nyan-cat-formatter' # I like this ^_^
-  gem "spring-commands-rspec"
-  # gem 'database_cleaner'
-  gem 'shoulda-matchers', '~> 3.1'
+
 end
 
 group :development do
