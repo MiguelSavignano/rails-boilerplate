@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby "2.3.1"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'
@@ -28,9 +28,53 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#ORM
+gem 'mongoid', github: 'mongodb/mongoid'
+
+#frontend
+gem "font-awesome-rails"
+# gem "react_on_rails",  github: 'shakacode/react_on_rails'
+
+#authentificate
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem "omniauth-google-oauth2"
+gem 'oauth2'
+
+#uploads
+gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
+
+#security
+gem 'figaro'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'pry-rails'
+
+
+  #test suite
+  gem 'rails-controller-testing'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem "spring-commands-rspec"
+  gem 'database_cleaner'
+  gem 'shoulda-matchers', '~> 3.1'
+  gem 'faker'
+  gem 'factory_girl_rails'
+  gem 'nyan-cat-formatter'
+
+  #guard
+  gem 'guard-livereload', require: false
+  gem 'guard-rspec', require: false
+  # gem 'guard-rails_best_practices', git: 'https://github.com/logankoester/guard-rails_best_practices.git'
+
+  #developmet tools
+  gem "rails_best_practices"
+  gem "better_errors"
+  gem 'meta_request'
+  gem 'overcommit'
 end
 
 group :development do
